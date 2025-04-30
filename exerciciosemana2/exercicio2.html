@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lados1 = prompt("digite o lado 1")
+        let lados2 = prompt("digite o lado 2")
+        let lados3 = prompt("digite o lado 3")
+    switch(true){
+     case (lados1 === lados2 && lados2 === lados3):
+    console.log("equilatero");
+    break; 
+    case (lados1 === lados2 || lados2=== lados3 || lados1 === lados3):
+        console.log("isósceles")
+        break;
+
+    default:
+        console.log("escaleno")
+    }
+    
+        
+    </script>
+</body>
+</html>
