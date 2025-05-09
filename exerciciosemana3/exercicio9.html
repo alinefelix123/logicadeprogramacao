@@ -10,9 +10,19 @@
     <button onclick="alterarTitulo()" >Alterar Título</button>
 
     <script>
+
+        let tituloOriginal = "é Dom, mas não é Dom, é esforço!";
+        let tituloAlterado = "Não é mágica!"
+
         function alterarTitulo(){
             let titulo = document.getElementById("tituloPostagem");
-            titulo.textContent="Blog da nininha";
+    
+
+            if(titulo.textContent == tituloOriginal){
+                titulo.textContent = tituloAlterado;
+            }else {
+                titulo.textContent = tituloOriginal;
+            }
         }
     </script>
 </body>
