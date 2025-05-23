@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .quadrado1{ 
+         width: 30px;
+         height: 30px;
+         background-color: darkgray;
+         position: absolute;
+        }
+        .quadrado2{
+        width: 30px;
+         height: 30px;
+         background-color: green;
+         position: absolute;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Carregando...</h1>
+    <div class="quadrado1"></div>
+    <div class="quadrado2">0%</div>
+    <div id="container"></div>
+
+    <script>
+        let progress=0;
+        let quadrado = document.getElementById('quadrado')
+        let intervalo = setInterval(()=>{
+            progresso++;
+            if(progresso>100){
+                clearInterval(intervalo);
+                alert("carregamento completo!")
+            }else{
+              quadrado.style.width= progresso +'%';
+               quadrado.textContent= progresso + '%';
+            }
+        },100);
+
+    </script>
+</body>
+</html>

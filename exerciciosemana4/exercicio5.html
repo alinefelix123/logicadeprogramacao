@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="meuTexto">Compre sua roupa para São joão aqui!</p>
+    <button onclick="aumentarBotao()">Aumentar fonte</button>
+    <button onclick="diminuirBotao()">Diminuir fonte</button>
+
+    <script>
+            let texto=document.getElementById('meuTexto');
+            let tamanhoAtual = 16 
+
+            function aumentarBotao(){
+            texto.style.fontSize= (tamanhoAtual++) + "px";
+        }
+      
+        function diminuirBotao(){
+            texto.style.fontSize= (tamanhoAtual--) + "px";
+        }
+
+    </script> 
+</body>
+</html>
